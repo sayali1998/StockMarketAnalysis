@@ -28,9 +28,9 @@ Steps to follow after activation:
 2. Go to the EC2 dashboard, then click on **Instances(running)** tab and the go to **Launch Instance**
 3. Create a instance name for this project.
 4. As you scroll down, you will find a box of key-pair(login), click on **Create a new key-pair**
-&nbsp; - Create a unique name for this key-pair
-&nbsp; - Choose RSA 
-&nbsp; - Create a key pair
+    - Create a unique name for this key-pair
+    - Choose RSA 
+    - Create a key pair
 <br />
 ==Save the key-pair properly in a folder==
 5. Keep all the other settings to default, and then Launch Instance.
