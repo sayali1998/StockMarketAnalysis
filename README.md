@@ -2,9 +2,7 @@
 Analysing Stock Market Data using Kafka <br />
 <br />
 This a project that I am developing for learning purposes. I have used this youtube video for reference :  [Stock Market Real-time Data Analysis using Kafka](https://www.youtube.com/watch?v=KerNf0NANMo)
-
 <br />
-
 # Steps in the project
 
 - [Setting up EC2 Instance](#setting-up-EC2-Instance)    
@@ -196,6 +194,6 @@ Creating Crawler
 
 > You will be prompted to provide an output location to store query results.
 
-Credits : Darshil Parmar [Stock Market Project](https://www.youtube.com/watch?v=KerNf0NANMo)
+**Credits : Darshil Parmar*
 
 
