@@ -8,7 +8,8 @@ This a project that I am developing for learning purposes. I have used this yout
 
 ## Steps in the project
 
-- [Setting up EC2 Instance](#Setting up EC2 Instance)
+[Setting up EC2 Instance](#settingupEC2Instance)    
+
 - Downloading Kafka on EC2 Instance
 - Starting Zookeeper and Kafka server on local machine
 - Creating topic on Kafka server
@@ -20,6 +21,7 @@ This a project that I am developing for learning purposes. I have used this yout
 - Quering our data using AWS Athena
 
 # Setting up EC2 Instance
+
 
 
 
