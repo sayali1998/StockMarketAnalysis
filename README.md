@@ -3,7 +3,6 @@ Analysing Stock Market Data using Kafka <br />
 <br />
 This a project that I am developing for learning purposes. I have used this youtube video for reference :  [Stock Market Real-time Data Analysis using Kafka](https://www.youtube.com/watch?v=KerNf0NANMo)
 
----
 <br />
 
 # Steps in the project
@@ -126,10 +125,76 @@ Open two EC2 terminals, one for consumer and the other for producer, and navigat
 This will start your producer and consumer.
 
 ## Writing python code for Kafka producer and consumer in python on Jupyter Notebook
+
+Refer the Jupyter Notebooks Uploaded.
+
 ## Simulating realtime data using a dataset
+
+[Dataset Link](https://www.kaggle.com/datasets/borismarjanovic/price-volume-data-for-all-us-stocks-etfs)
+Using one of the text file from this dataset
+
 ## Setting up S3 Bucket
+
+On AWS Dashboard, search for S3 (it is a object storage)
+1. Create a new S3 Bucket, give it a unique name
+
+We need to configure AWS on our local machine
+1. Search for IAM on AWS Dashboard
+2. Goto users, add a new user and give the user an unique name
+3. Select **Provide user access to the AWS Management Console**, choose **I want to create an IAM user**
+4. Next, then choose **Attach Policies Directly**
+5. Select **Administrator Access**
+6. Click on user, goto security credentials and then to access key
+7. Create a new access key and download it
+> Use case: Command Line Interface or Local Code
+
+Configure AWS CLI
+1. Install AWS CLI (For Mac) 
+'''curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
+sudo installer -pkg AWSCLIV2.pkg -target /'''
+[AWS Installation](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+2. On terminal type '''aws configure'''
+3. It will ask you for the access key and the secret access key (Which we downloaded earlier)
+4. Keep all other things to default settings, just press enter
+5. This will configure AWS Account to your local machine
+
+After this we write the code to store data onto S3 bucket on Jupyter Notebook
+
 ## Setting up Glue crawler
+
+Crawler will crawl all the schema and let us query on top of the data using AWS Athena
+
+Creating Crawler
+1. Search Glue Crawler on AWS Dashboard
+2. Click on Create Crawler, give it a unique name.
+3. Next, then **Is your data already mapped to Glue tables?** select **Not Yet**
+4. Click on add Data Source, add path to your S3 bucket, select **Crawl all sub-folders**
+5. Next, create an IAM role
+    - Go to IAM
+    - Then goto roles
+    - Select **Create role**
+    - Choose AWS Service
+    - Select service, here **Glue**
+    - Choose Glue, then Next
+    - Select **Administrator Access**
+    - Give a name to the role and then create the role
+6. Then, choose the created role from the dropdown, Next
+7. Create a new Database by selecting **Add Database**
+    - Give the database a unique name
+    - Click on Create Database
+8. Select the Database from the dropdown
+9. Click on Next, then Create Crawler
+10. Run the Crawler
+
+> IAM role will give access to Glue to write/read the data on S3
+
 ## Quering our data using AWS Athena
+
+1. Search for Athena on AWS Dashboard.
+2. Select the Data Source as "AWS Data catalog" and select the database that we have created.
+3. This will link Athena to the database and you can now query the data
+
+> You will be prompted to provide an output location to store query results.
 
 Credits : Darshil Parmar [Stock Market Project](https://www.youtube.com/watch?v=KerNf0NANMo)
 
