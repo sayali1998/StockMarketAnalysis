@@ -32,7 +32,8 @@ Steps to follow after activation:
     - Choose RSA 
     - Create a key pair
 <br />
-==Save the key-pair properly in a folder==
+> **Important:** Save the key-pair properly in a folder
+
 5. Keep all the other settings to default, and then Launch Instance.
 
 You can find the instance on the EC2 Dashboard under the Instances(running) tab.
