@@ -8,7 +8,7 @@ This a project that I am developing for learning purposes. I have used this yout
 
 ## Steps in the project
 
-- [Setting up EC2 Instance] (#setting up EC2 Instance)
+- [Setting up EC2 Instance](#Setting up EC2 Instance)
 - Downloading Kafka on EC2 Instance
 - Starting Zookeeper and Kafka server on local machine
 - Creating topic on Kafka server
