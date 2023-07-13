@@ -34,7 +34,7 @@ First, [Create an AWS Account](https://portal.aws.amazon.com/billing/signup?nc2=
 # Simulating realtime data using a dataset
 # Setting up S3 Bucket
 # Setting up Glue crawler
-# Quering our data using AWS Athena
+### Quering our data using AWS Athena
 
 Credits : Darshil Parmar [Stock Market Project](https://www.youtube.com/watch?v=KerNf0NANMo)
 
