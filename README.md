@@ -8,16 +8,16 @@ This a project that I am developing for learning purposes. I have used this yout
 
 # Steps in the project
 
-- [Setting up EC2 Instance](#settingupEC2Instance)    
-- [Downloading Kafka on EC2 Instance](#downloadingKafkaonEC2Instance)
-- [Starting Zookeeper and Kafka server on local machine](#startingZookeeperandKafkaserveronlocalmachine)
-- [Creating topic on Kafka server](#creatingtopiconKafkaserver)
-- [Creating producer and consumer on our server](#creatingproducerandconsumeronourserver)
-- [Writing python code for Kafka producer and consumer in python on Jupyter Notebook](#writingpythoncodeforKafkaproducerandconsumerinpythononJupyterNotebook)
-- [Simulating realtime data using a dataset](#simulatingrealtimedatausingadataset)
-- [Setting up S3 Bucket](#settingupS3Bucket)
-- [Setting up Glue crawler](#settingupGluecrawler)
-- [Quering our data using AWS Athena](#queringourdatausingAWSAthena)
+- [Setting up EC2 Instance](#setting-up-EC2-Instance)    
+- [Downloading Kafka on EC2 Instance](#downloading-Kafka-on-EC2-Instance)
+- [Starting Zookeeper and Kafka server on local machine](#starting-Zookeeper-and-Kafka-server-on-local-machine)
+- [Creating topic on Kafka server](#creating-topic-on-Kafka-server)
+- [Creating producer and consumer on our server](#creating-producer-and-consumer-on-our-server)
+- [Writing python code for Kafka producer and consumer in python on Jupyter Notebook](#writing-python-code-for-Kafka-producer-and-consumer-in-python-on-Jupyter-Notebook)
+- [Simulating realtime data using a dataset](#simulating-realtime-data-using-a-dataset)
+- [Setting up S3 Bucket](#setting-up-S3-Bucket)
+- [Setting up Glue crawler](#setting-up-Glue-crawler)
+- [Quering our data using AWS Athena](#quering-our-data-using-AWS-Athena)
 
 # Setting up EC2 Instance
 
