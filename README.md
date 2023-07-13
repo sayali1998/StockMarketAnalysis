@@ -32,6 +32,7 @@ Steps to follow after activation:
     - Choose RSA 
     - Create a key pair
 <br />
+
 > **Important:** Save the key-pair properly in a folder
 
 5. Keep all the other settings to default, and then Launch Instance.
